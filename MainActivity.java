@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onComplete(@NonNull Task<AuthResult> task) {
                 progressBar.setVisibility(View.GONE);
                 if(task.isSuccessful()){
-                    finish();
+                  //  finish();
                     SharedPreferences.Editor editor = sharedPreferences.edit().putBoolean("Login", true);
                     editor.apply();
                     Intent intent = new Intent(getApplicationContext(), main.class);
