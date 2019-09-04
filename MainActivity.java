@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onStart() {
         super.onStart();
         if(Auth.getCurrentUser()!=null){
-            finish();
             Intent intent = new Intent(getApplicationContext(), main.class);
             startActivity(intent);
         }
